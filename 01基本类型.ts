@@ -9,11 +9,6 @@ let num2:string = 'str'
 let str2:string = `${num2}你好`
 let str3:string = '你好'+str2+"哈哈哈哈"; 
 
-//数组
-let arr:number[] = [1,2,3,4];
-let arr2:Array<string> = ['1','2','3']
-let arr3 :Array<number> = [1,2,3,4];
-
 // 元组(已知数量和类型的数组)
 let tuple:[string,number] = ['123',123]
 let tuple2:[number,string] = [123,'abc']
