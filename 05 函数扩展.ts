@@ -15,7 +15,9 @@ function fn2(name:string,age?:number):string{
 }
 fn2('as',123)
 
-
+ let fn32:(param1:string,param2:number)=>void = function(){
+    console.log(123)
+}
 
 // // 函数重载1
 // function fn(params1:string):void

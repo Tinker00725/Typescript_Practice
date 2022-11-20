@@ -26,16 +26,32 @@
 //     },
 // }
 
-// 合并接口
-interface A {
-    name:string
-}
-interface B extends A {
-    age?:number,
-    school:string,
-}
+// // 合并接口
+// interface A {
+//     name:string
+// }
+// interface B extends A {
+//     age?:number,
+//     school:string,
+// }
 
-let p:B = {
-    name:'Tinker',
-    school:"CULR",
+// let p:B = {
+//     name:'Tinker',
+//     school:"CULR",
+// }
+
+// 接口和类型别名的区别
+interface IPerson{
+    name:string,
+    age:number
 }
+type person = {
+    name:string,
+    age:number
+}
+let obj3123:IPerson = {
+    name:'T',
+    age:123,
+}
+//接口只能为对象指定类型
+//类型别名可以给任意类型指定别名

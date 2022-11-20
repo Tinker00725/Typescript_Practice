@@ -76,3 +76,27 @@ class Person extends Man implements IA7,IB7{
         
     }
 }
+
+// 抽象类
+abstract class A {
+    // 抽象类用于继承，直接new无法实例化
+    name:string
+    constructor(name:string){
+        this.name = name
+    }
+    // 抽象方法不能被继承，要手写实现具体逻辑过程
+    abstract getName():string
+    sayName(){//可以被继承
+        console.log('我是实例方法')
+    }
+}
+
+class B extends A{
+    constructor(){
+        super('T')
+    }
+    getName(): string {
+        return this.name
+    }
+}
+let b = new B();

@@ -13,15 +13,16 @@ let str3:string = '你好'+str2+"哈哈哈哈";
 let tuple:[string,number] = ['123',123]
 let tuple2:[number,string] = [123,'abc']
 console.log(tuple[0])//123
+tuple.push(true)
 
-// 枚举(使用枚举类型可以为一组数值赋予友好的名字)
-enum Color{red=1,blue=2,orange=3}
-console.log(Color[1])//red 通过数值查找对应名称
-console.log(Color.red)//1 通过名称查找对应数值
-enum Color2{red,blue=123,orange}
-console.log(Color2.red)//0 不指定默认从0开始 ||red(0) blue(123)，orange(124)
-let a:Color = Color.red;
-console.log('这是a：',a)
+// // 枚举(使用枚举类型可以为一组数值赋予友好的名字)
+// enum Color{red=1,blue=2,orange=3}
+// console.log(Color[1])//red 通过数值查找对应名称
+// console.log(Color.red)//1 通过名称查找对应数值
+// enum Color2{red,blue=123,orange}
+// console.log(Color2.red)//0 不指定默认从0开始 ||red(0) blue(123)，orange(124)
+// let a:Color = Color.red;
+// console.log('这是a：',a)
 
 
 // console.log(obj.name)
